@@ -10,15 +10,26 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+x = { itemName: item, itemPrice: Math.floor(Math.random() * 101) } 
+c = [x]
+return `${item} has been added to your cart.`
 }
 
 function viewCart() {
-  // write your code here
+ let y = [];
+ if (c.length >= 3) {
+  for (let i= 0; i < c.length; i++ ) {
+    y.push(`${itemName} at ${itemPrice}.`); 
+  } return `In your cart, you have ${y}.`
+} if else(c.length === 2 ) {
+  for (let i = 0; i < c.length; i++) {
+    y.push(`${itemName} at ${itemPrice})
+  }
+}
 }
 
 function total() {
-  // write your code here
+ 
 }
 
 function removeFromCart(item) {
